@@ -49,7 +49,7 @@ Exit\n");
                 if ((emp + i)->id == searchId) { 
                     printf("Found: ID=%d Name=%s Salary=%.2f\n", 
                            (emp + i)->id, (emp + i)->name, (emp + i)
->salary); 
+->salary); 
                     found = 1; 
                     break; 
                 } 
