@@ -31,8 +31,8 @@ struct Employee *emp;
   
     do { 
         printf("\n--- Employee Record Menu ---\n"); 
-        printf("1. Display all employees\n2. Search employee by ID\n3. 
-Exit\n"); 
+        printf("1. Display all employees\n2. Search employee by ID\n3. Exit\n");
+
         printf("Enter your choice: "); 
         scanf("%d", &choice); 
   
@@ -40,7 +40,7 @@ Exit\n");
             printf("\n%-6s %-20s %-10s\n", "ID", "Name", "Salary"); 
             for (i = 0; i < n; i++) 
                 printf("%-6d %-20s %-10.2f\n", (emp + i)->id, (emp + i)
->name, (emp + i)->salary); 
+->name, (emp + i)->salary); 
         } else if (choice == 2) { 
             int searchId, found = 0; 
             printf("Enter ID to search: "); 
@@ -56,17 +56,16 @@ Exit\n");
             } 
             if (!found) 
  
-
- 
  
 
-                printf("Employee with ID %d not found.\n", searchId); 
-        } 
+                
+        printf("Employee with ID %d not found.\n", searchId);
+        }       
+        
     } while (choice != 3); 
   
     free(emp); 
     return 0; 
 } 
-  
   
 
