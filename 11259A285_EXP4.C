@@ -55,8 +55,7 @@ int main() {
     printf("Enter a postfix expression (single-digit operands): "); 
     scanf("%s", postfix); 
     printf("Result = %.2f\n", evaluatePostfix(postfix)); 
-Department of Computer Science and Engineering 
-Data Structures and Algorithms 
+
 return 0; 
 } 
 
