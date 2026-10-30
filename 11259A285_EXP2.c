@@ -69,4 +69,4 @@ Exit\n");
 } 
   
   
-Enter details for employee 2
+
